@@ -19,7 +19,7 @@ export const AppBar = ({ onLogout }) => {
             justifyContent: 'space-between',
             ...(isMobile && {
               flexWrap: 'wrap',
-              justifyContent: 'space-between',
+              justifyContent: 'center',
               padding: '0 15px',
               paddingBottom: '20px',
               paddingTop: '10px',

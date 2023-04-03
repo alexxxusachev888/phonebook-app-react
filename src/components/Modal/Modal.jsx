@@ -4,10 +4,12 @@ import { updateContact, fetchContacts } from '../../redux/operations';
 import { getToUpdate } from '../../redux/selectors';
 import { Modal, TextField, Grid, Box } from '@mui/material';
 import Button from '@mui/material/Button';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export const EditForm = ({ onClose }) => {
   const dispatch = useDispatch();
   const editingContact = useSelector(getToUpdate);
+  const isMobile = useMediaQuery('(max-width:600px)');
   
   const [name, setName] = useState(editingContact.name);
   const [number, setNumber] = useState(editingContact.number);
@@ -29,8 +31,8 @@ export const EditForm = ({ onClose }) => {
     position: 'absolute',
     top: '50%',
     left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
+    transform: isMobile ? 'translate(-45%, -50%)' : 'translate(-50%, -50%)',
+    width: isMobile ? '90%' : '400px',
     bgcolor: 'background.paper',
     border: '2px solid', 
     borderColor: 'primary.main', 
