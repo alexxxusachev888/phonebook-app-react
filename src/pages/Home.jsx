@@ -11,7 +11,7 @@ export const Home = () => {
           minHeight="80vh"
         >
           <Typography variant="h3" component="h1" textAlign="center">
-            Welcome to Contacts App
+            Welcome to Phonebook App
           </Typography>
           <Typography variant="h6" component="h2" textAlign="center">
             Manage your contacts efficiently and easily
