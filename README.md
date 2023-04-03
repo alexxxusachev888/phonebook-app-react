@@ -5,8 +5,6 @@ PhonebookApp is a personal project developed to showcase my skills in React.js a
 
 ## Features
 
-Any additional information goes here
-
 - Contact management (add, delete, edit) with an intuitive user interface
 - Search functionality for quick access to specific contacts
 - Secure registration and login process
