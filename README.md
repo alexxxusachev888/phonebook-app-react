@@ -15,7 +15,7 @@ PhonebookApp is a personal project developed to showcase my skills in React.js a
 ## Technologies Used
 
 - React
-- React Route
+- React Router
 - React Redux
 - Material UI
 - REST API
